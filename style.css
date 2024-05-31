@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  background-image: url('./winner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+h1{
+  margin-top: 2rem;
+  color: #000;
+}
+form{
+  display: flex;
+  gap: 2rem;
+}
+input{
+  padding: 15px 10px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: brown;
+  background-color: powderblue;
+  font-weight: 500;
+  height: 35px;
+  width: 175px;
+  letter-spacing: 1px;
+  border: 3px solid purple;
+  transition: 0.4s;
+  outline: none;
+}
+input:focus{
+  transition: 0.4s;
+  border: 2px solid rgb(94, 29, 29);
+  padding-left: 10px;
+  transition: 0.4s;
+  background-color: transparent;
+}
+.add_name{
+  background-color: #1834d6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 2px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  outline: none;
+  padding: 5px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+
+}
+.add_name::after{
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.add_name:main,
+.add_name:focus {
+  user-select: auto;
+}
+.add_name:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+.add_name:disabled {
+  cursor: auto;
+}
+.add_name:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+.board{
+    width: 900px;
+    display: flex;
+    padding: 2rem 0;
+    border-radius: 10px;
+    margin-bottom: 2rem; 
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 20px 22px 25px -20px rgba(0,0,0,0.7);
+}
+.board .details{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}
+.btn{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.incorrect{
+  display: none;
+  font-weight: 800;
+  color: red;
+}
+.btn button{
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    background: transparent;
+}
+.btn button:focus{
+    background-color: #0011ff;
+}
+.date{
+    font-size: 16px;
+}
